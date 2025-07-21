@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header, .suport, .logo, .ns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87CEEB;
+    color: white;
+    padding: 15px;
+}
+.suport, .ns{
+    gap: 5px;
+}
+
+footer{
+    background-color: rgb(208, 255, 253);
+}
