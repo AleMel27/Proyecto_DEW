@@ -13,7 +13,7 @@
     <!-- ----------------------------------------------------------------------- -->
     <header>
         <div id="logo">
-            <img src="img/zafiro-logo.png" alt="" width="45px">
+            <img src="img/zafiro-logo.png" alt="logo-zafiro" width="45px">
             <h1 style="font-family: 'Times New Roman', Times, serif;">ZAFIRO</h1>
         </div>
     </header>
@@ -27,50 +27,57 @@
             <li><a href="">Nosotros</a></li>
         </ul>
     </nav>
-    <!-- ------------------------------ CARRUSEL ------------------------------- -->
-    <img id="banner" alt="zafiro-hotel" src="img/banner1.jpg">
-    <!-- ----------------------------------------------------------------------- -->
-    <!--                           BUSCAR HABITACIONES                           -->
-    <!-- ----------------------------------------------------------------------- -->
-    <h2 class="subtitle">Buscar Habitaciones</h2>
-    <div id="search-field">
-        <input type="date" >
-        <input type="date" >
-        <input type="number" id="huespedes" max="6" min="1" value="1">
-    </div>
-    <div id="imagenes">
-        <img src="img/search_1.jpg" alt="" class="imagen">
-        <img src="img/search_2.jpg" alt="" class="imagen">
-        <img src="img/search_3.jpg" alt="" class="imagen">
-    </div>
-    <input type="button" value="Buscar" id="buscar">
-    <!-- -------------------- COMENTARIOS DE LOS HUESPEDES --------------------- -->
-    <h2 class="subtitle" id="coment">Comentarios de los Huéspedes</h2>
-    <div id="conte-comentarios">
-        <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
-        <p><b>Nombre del huésped:</b> Juan Pérez</p>
-        <p><b>Fecha de estadía: </b>17 de abril</p>
-        <p id="comentario">
-        “Mi experiencia en el Hotel Zafiro fue excelente. Desde que llegué, el personal fue muy amable y atento. La habitación estaba impecable, con una vista hermosa y todas las comodidades necesarias para descansar. El desayuno buffet fue variado y delicioso. Además, la ubicación del hotel es perfecta, cerca de todo pero lo suficientemente tranquila para relajarse. Sin duda, volvería a hospedarme aquí en mi próxima visita. ¡Gracias por una estancia inolvidable!”
-        </p>
-    </div>
-    <div id="conte-comentarios">
-        <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
-        <p><b>Nombre del huésped:</b> Serj Tankian</p>
-        <p><b>Fecha de estadía: </b>17 de abril</p>
-        <p id="comentario">
-        “Mi experiencia en el Hotel Zafiro fue excelente. Desde que llegué, el personal fue muy amable y atento. La habitación estaba impecable, con una vista hermosa y todas las comodidades necesarias para descansar. El desayuno buffet fue variado y delicioso. Además, la ubicación del hotel es perfecta, cerca de todo pero lo suficientemente tranquila para relajarse. Sin duda, volvería a hospedarme aquí en mi próxima visita. ¡Gracias por una estancia inolvidable!”
-        </p>
-    </div>
-    <div id="conte-comentarios">
-        <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
-        <p><b>Nombre del huésped:</b> Juan Pérez</p>
-        <p><b>Fecha de estadía: </b>17 de abril</p>
-        <p id="comentario">
-        “Mi experiencia en el Hotel Zafiro fue excelente. Desde que llegué, el personal fue muy amable y atento. La habitación estaba impecable, con una vista hermosa y todas las comodidades necesarias para descansar. El desayuno buffet fue variado y delicioso. Además, la ubicación del hotel es perfecta, cerca de todo pero lo suficientemente tranquila para relajarse. Sin duda, volvería a hospedarme aquí en mi próxima visita. ¡Gracias por una estancia inolvidable!”
-        </p>
-    </div>
-    <br><br><br><br><br>
+    <main>
+        <!-- ------------------------------ CARRUSEL ------------------------------- -->
+        <img id="banner" alt="zafiro-hotel" src="img/banner1.jpg">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                           BUSCAR HABITACIONES                           -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section id="buscar-habitaciones">
+        <h2 class="subtitle">Buscar Habitaciones</h2>
+        <div id="search-field">
+            <label for="entrada" class="E-S-H">Entrada:</label>
+            <input type="date" id="entrada">
+            <label for="salida" class="E-S-H">Salida:</label>
+            <input type="date" id="salida">
+            <label for="huespedes" class="E-S-H">Huéspedes:</label>
+            <input type="number" id="huespedes" max="6" min="1" value="1">
+        </div>
+        <div id="imagenes">
+        <img src="img/search_1.jpg" alt="habitación-1" class="imagen">
+        <img src="img/search_2.jpg" alt="habitación-2" class="imagen">
+        <img src="img/search_3.jpg" alt="habitación-3" class="imagen">
+        </div>
+        <input type="button" value="Buscar" id="buscar">
+        </section>
+        <!-- -------------------- COMENTARIOS DE LOS HUESPEDES --------------------- -->
+        <section class="comentarios">
+            <h2 class="subtitle" id="coment">Comentarios de los Huéspedes</h2>
+            <div class="conte-comentarios">
+                <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
+                <p><b>Nombre del huésped:</b> Juan Pérez</p>
+                <p><b>Fecha de estadía: </b>17 de abril</p>
+                <p class="comentario">
+                    “Mi experiencia en el Hotel Zafiro fue excelente. Desde que llegué, el personal fue muy amable y atento. La habitación estaba impecable, con una vista hermosa y todas las comodidades necesarias para descansar. El desayuno buffet fue variado y delicioso. Además, la ubicación del hotel es perfecta, cerca de todo pero lo suficientemente tranquila para relajarse. Sin duda, volvería a hospedarme aquí en mi próxima visita. ¡Gracias por una estancia inolvidable!”
+                </p>
+            </div>
+            <div class="conte-comentarios">
+                <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
+                <p><b>Nombre del huésped:</b> Serj Tankian</p>
+                <p><b>Fecha de estadía: </b>17 de abril</p>
+                <p class="comentario">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta sequi ea. Odio provident animi maxime nulla deserunt quo recusandae quos, sapiente, qui officia excepturi sequi dolores nihil veniam minima neque non ipsam delectus nesciunt consequuntur corrupti. Fuga esse autem facilis molestias atque est saepe cupiditate vero ipsam suscipit eos laudantium minima dolorum illum, assumenda illo deleniti molestiae odit, minus tempore reiciendis aut odio! Aliquid alias nam aperiam sunt, excepturi dicta quaerat dolorum, quidem recusandae magnam eligendi laudantium, expedita ad dolores. Perferendis quas exercitationem eum cupiditate. Repudiandae iste ipsam dolorum esse dicta."
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2 class="subtitle">Descubre del Hotel Zafiro</h2>
+            <div id="conoce-zafiro">
+                <p id="descrip-zafiro">Bienvenido al lugar donde la elegancia y el descanso se encuentran. En el Hotel Zafiro, cada rincón ha sido diseñado para ofrecerte una experiencia inolvidable: habitaciones modernas, atención personalizada, gastronomía exquisita y espacios pensados para tu relax. Ya sea que viajes por placer o por trabajo, aquí encontrarás la combinación perfecta de confort, estilo y calidez. <br><b>¿Listo para descubrir tu próximo destino favorito?</b></p>
+                <img src="img/sala-zafiro.jpg" alt="sala-zafiro" width="500px" id="img-zafiro">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
 <script src="js/zafiro.js"></script>
