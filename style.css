@@ -11,7 +11,7 @@ header {
     color: rgb(198, 198, 198);
     padding: 20px;
 }
-.logo{
+#logo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,14 +24,15 @@ header {
     justify-content: center;
 }
 .navegacion ul{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
     list-style: none;
+    padding: 15px 0;
 }
 
 .menu > li{
-    position: relative;
-    display: inline-block;
-    width: 130px;
-    margin: 15px 150px;
+    margin: 0;
 }
 
 .menu > li > a{
@@ -39,7 +40,7 @@ header {
     padding: 5px 15px;
     color: rgb(153, 102, 51);
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .menu li a:hover{
@@ -61,6 +62,10 @@ header {
 #search-field{
     width: 100%;
     text-align: center;
+}
+.E-S-H{
+    font-size: 20px;
+    font-weight: 600;
 }
 #search-field > input{
     width: 300px;
@@ -88,7 +93,8 @@ header {
 }
 #buscar{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin: 10px 200px 0 auto;
     width: 100px;
     height: 40px;
     background-color: black;
@@ -96,9 +102,6 @@ header {
     font-size: 15px;
     cursor: pointer;
     font-weight: 600;
-    margin-top: 10px;
-    margin-right: 200px;
-    float: right;
     border-radius: 20px;
 }
 #buscar:hover{
@@ -112,9 +115,7 @@ header {
 }
 /* ------------------------------- COMENTARIOS ------------------------------ */
 #coment{
-    clear: both;
     display: block;
-    justify-content: center;
     text-align: center;
     padding: 10px;
     color: rgb(153, 102, 51);
@@ -122,7 +123,7 @@ header {
     font-size: 25px;
     font-weight: 600;
 }
-#conte-comentarios{
+.conte-comentarios{
     width: 80%;
     margin: 20px auto;
     padding: 20px;
@@ -130,18 +131,36 @@ header {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-#conte-comentarios:hover{
-    transform: scale(1.02);
-    transition: all .3s;
-}
-#conte-comentarios p{
+.conte-comentarios p{
     margin: 10px 0;
     font-size: 18px;
     color: rgb(153, 102, 51);
 }
-#conte-comentarios p#comentario{
+.conte-comentarios p.comentario{
     font-size: 16px;
     color: rgb(100, 100, 100);
     text-align: justify;
-    color: rgb(100, 100, 100);
+}
+/* ------------------------ DESCUBRE EL HOTEL ZAFIRO ------------------------ */
+#conoce-zafiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    background-color: rgb(186, 255, 255);
+}
+#conoce-zafiro p{
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 0;
+}
+#img-zafiro{
+    padding: 5px;
+    border: 3px solid rgb(126, 126, 126);
+    background-color: white;
+}
+#img-zafiro:hover{
+    transform: scale(1.05);
+    transition: all .3s;
 }
