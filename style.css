@@ -7,7 +7,7 @@
 
 /* --------------------------------- HEADER --------------------------------- */
 header {
-    background-color: rgb(186, 255, 255);
+    background-color: #bfe5df;
     color: rgb(198, 198, 198);
     padding: 20px;
 }
@@ -27,7 +27,6 @@ header {
     display: flex;
     justify-content: center;
     gap: 80px;
-    list-style: none;
     padding: 15px 0;
 }
 
@@ -147,8 +146,9 @@ header {
     flex-direction: row;
     align-items: center;
     padding: 30px;
+    margin-bottom: 50px;
     gap: 20px;
-    background-color: rgb(186, 255, 255);
+    background-color: #bfe5df;
 }
 #conoce-zafiro p{
     font-size: 18px;
@@ -163,4 +163,76 @@ header {
 #img-zafiro:hover{
     transform: scale(1.05);
     transition: all .3s;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+footer{
+    background-color: #24262B;
+    padding: 80px 80px 40px 80px;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #bfe5df;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #bfe5df;
+    color: #353535;
+}
+@media(max-width:991px){
+    .icon-menu{
+        z-index: 1;
+    } 
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
