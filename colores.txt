@@ -1,8 +1,0 @@
-1. *Calma y serenidad*:
-Azul claro #87CEEB
-Blanco #FFFFFF
-Verde menta #bcfffdff
-3. *Vibrante y tropical*:
-Verde limón #32CD32
-Azul turquesa #1ABC9C
-Amarillo sol #F2C464
