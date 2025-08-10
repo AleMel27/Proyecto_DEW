@@ -52,23 +52,45 @@ header {
     height: 500px;
 }
 /* ------------------------ IMAGENES DE HABITACIONES ------------------------ */
-
-#img{
+#img {
     margin: 15px;
     display: flex;
     justify-content: center;
     gap: 35px;
 }
-.imagen{
+
+.hab-container {
+    position: relative;
+}
+
+.imagen {
     width: 250px;
     height: 200px;
     padding: 5px;
     border: 3px solid rgb(126, 126, 126);
     background-color: white;
+    transition: transform .3s, opacity .3s;
 }
-#img img:hover{
+
+#hab1_text, #hab2_text, #hab3_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.hab-container:hover .imagen {
     transform: scale(1.05);
-    transition: all .3s;
+    opacity: 0.5;
+}
+
+.hab-container:hover #hab1_text,
+.hab-container:hover #hab2_text,
+.hab-container:hover #hab3_text {
+    opacity: 1;
 }
 
 /* ------------------------------- COMENTARIOS ------------------------------ */
