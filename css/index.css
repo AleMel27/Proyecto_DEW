@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+header {
+    background-color: #bfe5df;
+    color: rgb(198, 198, 198);
+    padding: 20px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------------------------- MENU ---------------------------------- */
+.navegacion{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navegacion ul{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 15px 0;
+}
+
+.menu > li{
+    margin: 0;
+}
+
+.menu > li > a{
+    display: block;
+    padding: 5px 15px;
+    color: rgb(153, 102, 51);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu li a:hover{
+    color: white;
+    transition: all .3s;
+}
+/* -------------------------------- CARRUSEL -------------------------------- */
+#banner{
+    width: 100%;
+    height: 500px;
+}
+/* ------------------------ IMAGENES DE HABITACIONES ------------------------ */
+#img {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.hab-container {
+    position: relative;
+}
+
+.imagen {
+    width: 250px;
+    height: 200px;
+    padding: 5px;
+    border: 3px solid rgb(126, 126, 126);
+    background-color: white;
+    transition: transform .3s, opacity .3s;
+}
+
+#hab1_text, #hab2_text, #hab3_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.hab-container:hover .imagen {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.hab-container:hover #hab1_text,
+.hab-container:hover #hab2_text,
+.hab-container:hover #hab3_text {
+    opacity: 1;
+}
+
+/* ------------------------------- COMENTARIOS ------------------------------ */
+.subtitle{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: rgb(153, 102, 51);
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.conte-comentarios{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.conte-comentarios p{
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(153, 102, 51);
+}
+.conte-comentarios p.comentario{
+    font-size: 16px;
+    color: rgb(100, 100, 100);
+    text-align: justify;
+}
+/* ------------------------ DESCUBRE EL HOTEL ZAFIRO ------------------------ */
+#conoce-zafiro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 50px;
+    gap: 20px;
+    background-color: #bfe5df;
+}
+#conoce-zafiro p{
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 0;
+}
+#img-zafiro{
+    padding: 5px;
+    border: 3px solid rgb(126, 126, 126);
+    background-color: white;
+}
+#img-zafiro:hover{
+    transform: scale(1.05);
+    transition: all .3s;
+}
+/* ---------------------------- FORM DE RESERVAS ---------------------------- */
+#form{
+    display: none;
+}
+#search1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 515px;
+    width: 100%;
+    margin: 0 auto 15px auto;
+}
+#search2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 515px;
+    width: 100%; 
+    margin: auto;
+}   
+#search1 > input, #search2 > input,#search1 > select, #search2 > select{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+#buscar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 200px 15px auto;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: rgb(153, 102, 51);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+#buscar:hover{
+    background-color: rgb(81, 81, 81);
+    color:rgb(152, 114, 76);
+    transition: all .3s;
+}
+#buscar:active{
+    transform: scale(0.95);
+    transition: all .3s;
+}
+/* --------------------------------- FOOTER --------------------------------- */
+footer{
+    background-color: #24262B;
+    padding: 80px 80px 40px 80px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #bfe5df;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #bfe5df;
+    color: #353535;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 RESPONSIVE                                 */
+/* -------------------------------------------------------------------------- */
+@media(max-width: 1275px){
+    /*RELLENAR*/
+}
+@media(max-width:1140px){
+    #banner{
+        height: 400px;
+    }
+    .entrada,
+    .salida,
+    .huespedes{
+        width: 400px;
+    }  
+}
+@media(max-width:991px){
+    /*HEADER*/
+    #hab3{
+        display: none;
+    }
+    /*FOOTER*/
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:700px){
+    #img-zafiro{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    #hab2{
+        display: none;
+    }
+    .menu > li > a{
+        padding: 5px;
+        font-size: 15px;
+    }
+    #banner{
+        height: 300px;
+    }
+}

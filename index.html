@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zafiro</title>
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link rel="shortcut icon" href="img/zafiro.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 HEADER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <header>
+        <div id="logo">
+            <img src="img/zafiro.png" alt="logo-zafiro" width="60px">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">ZAFIRO</h1>
+        </div>
+    </header>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  MENU                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- ------------------------------ CARRUSEL ------------------------------- -->
+        <img id="banner" alt="zafiro-hotel" src="img/banner1.jpg">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                           BUSCAR HABITACIONES                           -->
+        <!-- ----------------------------------------------------------------------- -->
+        <section id="img">
+            <div class="hab-container">
+            <img src="img/search_1.jpg" alt="habitación-1" class="imagen" id="hab1">
+            <p id="hab1_text"><b>Descripción:</b> 2 camas, televisor, armario, baño</p>
+            </div>
+            <div class="hab-container">
+            <img src="img/search_2.jpg" alt="habitación-2" class="imagen" id="hab2">
+            <p id="hab2_text"><b>Descripción:</b> 2 camas, televisor, armario, baño, piscina </p>
+            </div>
+            <div class="hab-container">
+            <img src="img/search_3.jpg" alt="habitación-3" class="imagen" id="hab3">
+            <p id="hab3_text"><b>Descripción:</b> 3 cuartos televisor, armario,     2 baños, jacuzzi, piscina, minibar</p>
+            </div>
+        </section>
+        <!-- -------------------- COMENTARIOS DE LOS HUESPEDES --------------------- -->
+        <section class="comentarios">
+            <h2 class="subtitle" id="coment">Comentarios de los Huéspedes</h2>
+            <div class="conte-comentarios">
+                <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
+                <p><b>Nombre del huésped:</b> Juan Pérez</p>
+                <p><b>Fecha de estadía: </b>17 de abril</p>
+                <p class="comentario">
+                    “Mi experiencia en el Hotel Zafiro fue excelente. Desde que llegué, el personal fue muy amable y atento. La habitación estaba impecable, con una vista hermosa y todas las comodidades necesarias para descansar. El desayuno buffet fue variado y delicioso. Además, la ubicación del hotel es perfecta, cerca de todo pero lo suficientemente tranquila para relajarse. Sin duda, volvería a hospedarme aquí en mi próxima visita. ¡Gracias por una estancia inolvidable!”
+                </p>
+            </div>
+            <div class="conte-comentarios">
+                <p> ⭐⭐⭐⭐⭐ 5/5 estrellas</p>
+                <p><b>Nombre del huésped:</b> Serj Tankian</p>
+                <p><b>Fecha de estadía: </b>17 de abril</p>
+                <p class="comentario">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta sequi ea. Odio provident animi maxime nulla deserunt quo recusandae quos, sapiente, qui officia excepturi sequi dolores nihil veniam minima neque non ipsam delectus nesciunt consequuntur corrupti. Fuga esse autem facilis molestias atque est saepe cupiditate vero ipsam suscipit eos laudantium minima dolorum illum, assumenda illo deleniti molestiae odit, minus tempore reiciendis aut odio! Aliquid alias nam aperiam sunt, excepturi dicta quaerat dolorum, quidem recusandae magnam eligendi laudantium, expedita ad dolores. Perferendis quas exercitationem eum cupiditate. Repudiandae iste ipsam dolorum esse dicta."
+                </p>
+            </div>
+        </section>
+        <!-- ----------------------------- CONOCE ZAFIRO ---------------------------- -->
+        <section>
+            <h2 class="subtitle">Descubre del Hotel Zafiro</h2>
+            <div id="conoce-zafiro">
+                <p id="descrip-zafiro">Bienvenido al lugar donde la elegancia y el descanso se encuentran. En el Hotel Zafiro, cada rincón ha sido diseñado para ofrecerte una experiencia inolvidable: habitaciones modernas, atención personalizada, gastronomía exquisita y espacios pensados para tu relax. Ya sea que viajes por placer o por trabajo, aquí encontrarás la combinación perfecta de confort, estilo y calidez. <br><b>¿Listo para descubrir tu próximo destino favorito?</b></p>
+                <img src="img/sala-zafiro.jpg" alt="sala-zafiro" width="500px" id="img-zafiro">
+            </div>
+        </section>
+    </main>
+    <main id="form">
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                         FORMULARIO DE RESERVAS                          -->
+        <!-- ----------------------------------------------------------------------- -->
+            <h2 class="subtitle">Formulario de Reservas</h2>
+            <div id="search1">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo" required>
+                <input type="text" placeholder="DNI" maxlength="8" required>
+            </div>
+            <div id="search2">
+                <input type="date" placeholder="Fecha de Entrada" required>
+                <input type="date" placeholder="Fecha de Salida"required>
+                <input type="number" placeholder="Huéspedes" max="4" min="1" required>
+                <select required>
+                    <option value="" disabled selected>Tipo de Habitación</option>
+                    <option value="estandar">Estandar</option>
+                    <option value="lujo">De Lujo</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <select required>
+                    <option value="" disabled selected>Tipo de Pago</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="efectivo">Efectivo</option>
+                </select>
+            </div>
+            <input type="submit" value="Buscar" id="buscar">
+    </main>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 FOOTER                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Compañia</h4>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Nuestros servicios</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Afiliate</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contactanos</h4>
+                <ul>
+                    <li><a href="#">Consultas</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li><a href="#">Pagos</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-tiktok"></i></a>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="js/zafiro.js"></script>
