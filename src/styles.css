@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Mitr;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(236, 234, 228);
+    display: grid;
+
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.nom-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    margin-left: 40px;
+    width: 55px;
+    height: auto;
+}
+
+.carrusel {
+    height: 100px;
+}
+
+.nombre-logo {
+    padding-top: 7px;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.opciones-nav {
+    margin-right: 50px;
+}
+
+.items {
+    margin-right: 1.5rem;
+}
+
+.div-contenedor-general {
+    width: 80%;
+}
+
+.form-container {
+    margin-bottom: 150px;
+}
+
+.titulo-habitacines {
+    margin-top: 50px;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 499px;
+    justify-content: center;
+    padding: 25px;
+
+}
+
+.titulo-form {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.grupo-casilla {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.label-casillas {
+    margin-bottom: .3rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.casillas {
+    padding: 5px;
+    width: 460px;
+    outline: none;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+.contenedor-cuerpo {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    border: 5px solid red;
+}
+
+.contenedor-apartado-imgs {
+    max-width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 10px solid black;
+}
+
+.contenedor-imagenes-cuerpo {
+    border: 5px green solid;
+    margin-bottom: 150px;
+}
+
+.imagenes-cuerpo {
+    width: 350px;
+    margin-top: 25px;
+    margin-right: 35px;
+}
+
+.imagen-cartas-habitaciones {
+    background-color: beige;
+    padding: 30px;
+    margin: 150px;
+    width: 65%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-habitaciones {
+    width: 320px;
+    height: 280px;
+    padding: 10px;
+}
+
+.btn-reservar {
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+#pie-pagina {
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    position: relative;
+    background: #2f50ff;
+    padding: 80px;
+    justify-content: space-around;
+}
+
+.pie-pagina {
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 320px 230px 220px 160px;
+}
+
+.logo-titulo {
+    margin-top: -7px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pie-logo-titulo {
+    font-size: 30px;
+}
+
+.logo-titulo img {
+    height: 45px;
+    width: auto;
+}
+
+.contenedores-sub {
+    color: #B3B2AE;
+    text-align: left;
+}
+
+.sub-titulo-pie {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.contenedor-contenido-pie {
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+.nav-pie {
+    color: #91918F;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-pie:hover {
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+}
+
+
+.iconos {
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin: 5px 10px 10px 0;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/*CONTENEDOR DEL SIMBOLO COPY*/
+.copy-contenedor {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*SIMBOLO COPY*/
+.copy {
+    color: #B3B2AE;
+}
+
+@media (max-width: 1366px) {
+    .pie-pagina {
+        width: 70%;
+
+    }
+}
+
+@media (max-width: 760px) {
+    .pie-pagina {
+        width: 50%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .form {
+        max-width: 700px;
+    }
+
+    .casillas {
+        width: auto;
+    }
+}
+
+.contenedor-imagenes-cuerpo,
+.imagen-cartas-habitaciones {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /* ocultar scrollbar en Firefox */
+}
+
+.contenedor-imagenes-cuerpo::-webkit-scrollbar,
+.imagen-cartas-habitaciones::-webkit-scrollbar {
+    display: none;
+    /* ocultar scrollbar en Chrome */
+}
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-slider {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.barra-menu-contenedor {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: white;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.barra-menu-contenedor.active {
+    right: 0;
+}
+
+.barra-menu-contenedor.desactive {
+    right: -300px;
+}
+
+.sub-menu {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.sub-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-flecha.rotate {
+    transform: rotate(180deg);
+}
+
+.barra-menu-contenedor,
+.btn-menu {
+    display: none;
+}
+
+
+
+
+
+
+.d-flex::-webkit-scrollbar {
+    display: none;
+}
+
+.d-flex {
+    -ms-overflow-style: none;
+    /* IE y Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+/* Mostrar solo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .btn-menu {
+        display: block;
+    }
+
+    .items-nav-principal {
+        display: none !important;
+    }
+
+    .barra-menu-contenedor {
+        display: block;
+    }
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Offcanvas menú lateral */
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+}
+
+.offcanvas-menu.active {
+    right: 0;
+}
+
+.offcanvas-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.offcanvas-menu ul li {
+    margin-bottom: 0.5rem;
+    /* separa las opciones */
+}
+
+.collapse-custom {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+.img-banner {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+
+.offcanvas-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    /* ocupa toda la altura de la pantalla */
+    background: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    overflow-y: auto;
+    /* 🔹 activa scroll vertical */
+}
+
+.offcanvas-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
